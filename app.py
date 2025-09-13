@@ -33,7 +33,7 @@ def predict_next_word(model, tokenizer, text, max_sequence_len):
 st.title("📝 Next Word Prediction App")
 st.write("Enter a phrase and let the model predict the next word!")
 
-user_input = st.text_input("Enter text:", "Long liue the King")
+user_input = st.text_input("Enter text:", "Long live the King")
 
 if st.button("Predict Next Word"):
     next_word = predict_next_word(model, tokenizer, user_input, max_sequence_len)
